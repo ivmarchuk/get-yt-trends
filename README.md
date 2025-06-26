@@ -9,8 +9,8 @@ The project is structured following Clean Architecture principles to ensure sepa
 -   `core/`: Contains the core business logic of the application.
     -   `entities/`: Defines the core data structures (e.g., `Video`, `Category`).
     -   `interfaces/`: Defines the contracts (abstract base classes) for data providers and loaders.
-    -   `use_cases/`: Orchestrates the application's workflows.
--   `data_providers/`: Contains concrete implementations for the interfaces defined in `core/interfaces`. It handles all interactions with external data sources like APIs and files.
+    -   `usecases/`: Orchestrates the application's workflows.
+-   `dataproviders/`: Contains concrete implementations for the interfaces defined in `core/interfaces`. It handles all interactions with external data sources like APIs and files.
 -   `entrypoints/`: Contains the entry point of the application (`run_etl.py`) which initializes and runs the ETL process.
 -   `config/`: Contains configuration files for the application.
 -   `tests/`: (Future placeholder) Will contain tests for the application.

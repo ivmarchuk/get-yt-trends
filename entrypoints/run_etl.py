@@ -6,9 +6,9 @@ import sys
 # Add project root to Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from core.use_cases.fetch_and_load_trends import FetchAndLoadTrends
-from data_providers.api_clients import DislikeApiProvider, YouTubeApiProvider
-from data_providers.file_loader import CsvDataLoader
+from core.usecases.fetch_and_load_trends import FetchAndLoadTrends
+from dataproviders.api_clients import DislikeApiProvider, YouTubeApiProvider
+from dataproviders.file_loader import CsvDataLoader
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
